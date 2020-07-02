@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- HTTP 1.1 -->
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- HTTP 1.0 -->
+    <meta http-equiv="cache-control" content="no-cache">
+    <!-- Prevent caching at the proxy server -->
+    <meta http-equiv="expires" content="0">
+    <title>中国疫情地图</title>
+    <link rel="stylesheet" href="./js/plugins/layui/css/layui.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="layui-container">
+        <div class="layui-row layui-col-space15 summary">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 layui-col-lg3">
+                <div class="layui-card">
+                    <div class="layui-card-header md-red-bg">全国确诊</div>
+                    <div class="layui-card-body light-red-bg">
+                        <span id="confirm-number" class="summary-number confirm-number red-text"></span><br>
+                        较上日增加：<span id="confirm-add" class="red-text"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 layui-col-lg3">
+                <div class="layui-card">
+                    <div class="layui-card-header md-yellow-bg">疑似病例</div>
+                    <div class="layui-card-body light-yellow-bg">
+                        <span id="suspect-number" class="summary-number suspect-number yellow-text"></span><br>
+                        较上日增加：<span class="suspect-add yellow-text" id="suspect-add"></span>
+                    </div>
+                </div>
+            </div> 
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 layui-col-lg3">
+                <div class="layui-card">
+                    <div class="layui-card-header md-green-bg">治愈人数</div>
+                    <div class="layui-card-body light-green-bg">
+                        <span id="health-number" class="summary-number health-number green-text"></span><br>
+                        较上日增加：<span class="health-add green-text" id="health-add"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 layui-col-lg3">
+                <div class="layui-card">
+                    <div class="layui-card-header md-gray-bg">死亡人数</div>
+                    <div class="layui-card-body light-gray-bg">
+                        <span id="dead-number" class="summary-number dead-number gray-text"></span><br>
+                        较上日增加：<span class="dead-add gray-text" id="dead-add"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row gird-chart-container">
+            <div class="layui-col-xs24 layui-col-sm24 layui-col-md24 layui-col-lg12 chart-item" id="China">
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/bluebird/3.7.0/bluebird.min.js"></script>
+<script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
+<script src="./map/China.js"></script>
+<script src="./js/plugins/layui/layui.js"></script>
+<script src="./js/ajaxUtils.js"></script>
+<script src="https://gallery.echartsjs.com/dep/echarts/map/js/china.js"></script>
+<script src="./js/index.js"></script>
+</html>

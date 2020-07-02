@@ -1,0 +1,66 @@
+html,body,.layui-container{
+    width: 100%;
+    height: 100%;    
+    background: #162436;
+    margin: 0;
+    padding: 0;
+	display:center;
+}
+
+.grid-title{
+    height: 100px;
+}
+.gird-chart-container{
+    height: calc(100% - 100px);
+}
+.chart-item{
+    display: block;
+    height: calc(100% - 100px);
+}   
+.summary{
+    margin: 10px 0;
+}  
+.summary .layui-card-header{
+    font-size: 18px;
+    font-weight: bold;
+}
+.summary-number{
+    font-size: 40px;
+    font-weight: bold; 
+}
+.md-red-bg{
+    background: #FFE0E0;
+}
+.light-red-bg{
+    background: #FDF1F1;
+}
+.red-text{
+    color: #F55253;
+}
+.md-yellow-bg{
+    background: #FFEED9;
+}
+.light-yellow-bg{
+    background: #FFF7ED;
+}
+.yellow-text{
+    color: #FF961E;
+}
+.md-green-bg{
+    background: #DFEEE6;
+}
+.light-green-bg{
+    background: #F1F8F4;
+}
+.green-text{
+    color: #178B50;
+}
+.md-gray-bg{
+    background: #EEEEEE;
+}
+.light-gray-bg{
+    background: #F8F8F8;
+}
+.gray-text{
+    color: #66666c;
+}
